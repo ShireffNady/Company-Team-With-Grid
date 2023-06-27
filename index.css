@@ -1,0 +1,96 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #ddd;
+}
+
+.page {
+    width: 100%;
+    height: 80%;
+    margin: auto;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap: 10px;
+}
+
+.page div {
+    padding: 20px;
+    border-bottom: 5px solid orange;
+    position: relative;
+}
+
+.page div::before {
+    content: "''";
+    color: #ccc;
+    position: absolute;
+    font-size: 60px;
+    bottom: -28px;
+    right: 20px;
+    transform: rotate(13deg);
+    -webkit-transform: rotate(13deg);
+    -moz-transform: rotate(13deg);
+    -ms-transform: rotate(13deg);
+    -o-transform: rotate(13deg);
+}
+
+.w {
+    background-color: white;
+    color: black;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+h4 {
+    color: #a8a8a8;
+    margin-bottom: 20px;
+}
+
+.p1 {
+    font-weight: bold;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+
+.p2 {
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.b {
+    background-color: black;
+    color: white;
+}
+
+.one {
+    grid-area: 1 / 1 / 3 / 3;
+}
+
+.two {
+    grid-area: 1 / 3 / 3 / 4;
+}
+
+.three {
+    grid-area: 1 / 4 / 7 / 5;
+}
+
+.four {
+    grid-area: 3 / 1 / 7 / 2;
+}
+
+.five {
+    grid-area: 3 / 2 / 5 / 4;
+}
+
+.six {
+    grid-area: 5 / 2 / 7 / 4;
+}
